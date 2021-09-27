@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Button, Dropdown, Menu } from 'semantic-ui-react'
 
-export default class MenuExampleSizeSmall extends Component {
+export default class FilterOptions extends Component {
   state = { activeItem: 'home' }
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
