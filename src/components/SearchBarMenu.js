@@ -12,27 +12,15 @@ export default class SearchBarMenu extends Component {
     return (
       <Menu secondary id="searchBarMenu">
         <Menu.Item
-          name='home'
-          active={activeItem === 'home'}
-          onClick={this.handleItemClick}
+          name='Search School'
         />
-        <Menu.Item
-          name='messages'
-          active={activeItem === 'messages'}
-          onClick={this.handleItemClick}
-        />
-        <Menu.Item
-          name='friends'
-          active={activeItem === 'friends'}
-          onClick={this.handleItemClick}
-        />
-        <Menu.Menu position='right'>
+        <Menu.Menu position='center'>
           <Menu.Item>
-            <Input icon='search' placeholder='Search...' />
+            <Input icon='search' placeholder='City,zip,address or school' />
           </Menu.Item>
           <Menu.Item
             name='logout'
-            active={activeItem === 'logout'}
+            active={activeItem === 'Compare Schools'}
             onClick={this.handleItemClick}
           />
         </Menu.Menu>
