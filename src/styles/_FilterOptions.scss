@@ -2,4 +2,7 @@
     .button {
         background-color: $darkGreen;
     }
+    .active.item {
+        background: $blue;
+    }
 }

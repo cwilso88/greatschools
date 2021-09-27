@@ -10,7 +10,7 @@ export default class SearchBarMenu extends Component {
     const { activeItem } = this.state
 
     return (
-      <Menu secondary id="menu">
+      <Menu secondary id="searchBarMenu">
         <Menu.Item
           name='home'
           active={activeItem === 'home'}
