@@ -2,6 +2,7 @@ import SearchBarMenu from "./components/SearchBarMenu";
 import FilterOptions from "./components/FilterOptions";
 import Location from "./components/Location";
 import SchoolList from "./components/SchoolList";
+import Map from "./components/Map";
 import './styles/main.scss';
 
 
@@ -22,7 +23,10 @@ function App() {
       <main style={mainStyle}>
         <div style={{padding: '20px 60px'}}>
           <Location />
+        </div>
+        <div id="resultsSection">
           <SchoolList />
+          <Map />
         </div>
       </main>
     </div>
