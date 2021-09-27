@@ -1,5 +1,9 @@
 #searchBarMenu {
+    padding: 0 100px;
     .active.item {
         background: $blue;
+    }
+    a.item:hover {
+        background: $gray;
     }
 }

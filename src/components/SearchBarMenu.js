@@ -14,13 +14,20 @@ export default class SearchBarMenu extends Component {
         <Menu.Item
           name='Search School'
         />
-        <Menu.Menu position='center'>
+        <Menu.Menu>
           <Menu.Item>
             <Input icon='search' placeholder='City, zip, or school' />
           </Menu.Item>
+          </Menu.Menu>
+          <Menu.Menu position='right'>
           <Menu.Item
             name='Compare Schools'
             active={activeItem === 'Compare Schools'}
+            onClick={this.handleItemClick}
+          />
+          <Menu.Item
+            name='Parenting'
+            active={activeItem === 'Parenting'}
             onClick={this.handleItemClick}
           />
         </Menu.Menu>
