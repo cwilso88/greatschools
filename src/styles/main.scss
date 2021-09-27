@@ -1,6 +1,7 @@
 @import 'variables.scss';
 @import 'SearchBarMenu';
 @import 'FilterOptions';
+@import 'ResultsSection';
 
 
 
@@ -11,3 +12,7 @@
    #location a.section{
       color: $darkGreen;
    }
+
+   .ui.segments {
+      margin: 20px;
+  }
