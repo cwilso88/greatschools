@@ -1,6 +1,7 @@
 import SearchBarMenu from "./components/SearchBarMenu";
 import FilterOptions from "./components/FilterOptions";
 import Location from "./components/Location";
+import SchoolList from "./components/SchoolList";
 import './styles/main.scss';
 
 
@@ -21,6 +22,7 @@ function App() {
       <main style={mainStyle}>
         <div style={{padding: '20px 60px'}}>
           <Location />
+          <SchoolList />
         </div>
       </main>
     </div>
