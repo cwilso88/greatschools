@@ -1,5 +1,6 @@
 import SearchBarMenu from "./components/SearchBarMenu";
 import FilterOptions from "./components/FilterOptions";
+import Location from "./components/Location";
 import './styles/main.scss';
 
 
@@ -18,8 +19,8 @@ function App() {
        <FilterOptions />
       </header>
       <main style={mainStyle}>
-        <div style={{padding: '0 60px 0 60px'}}>
-hello
+        <div style={{padding: '20px 60px'}}>
+          <Location />
         </div>
       </main>
     </div>
