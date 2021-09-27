@@ -10,7 +10,6 @@ function App() {
        <SearchBarMenu />
        <FilterOptions />
       </header>
-      <hr/>
     </div>
   );
 }
