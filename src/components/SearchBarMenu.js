@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Input, Menu } from 'semantic-ui-react'
+import logo from '../styles/images/logo.png'
 
 export default class SearchBarMenu extends Component {
   state = { activeItem: 'home' }
@@ -11,6 +12,9 @@ export default class SearchBarMenu extends Component {
 
     return (
       <Menu secondary id="searchBarMenu">
+        <div className="logo c ">
+
+        </div>
         <Menu.Item
           name='Search School'
         />
