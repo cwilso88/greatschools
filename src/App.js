@@ -17,6 +17,10 @@ function App() {
   return (
     <div className="App">
       <header className="header" style={{padding:'40px 60px'}}> 
+        <div className="site_title">
+          <h1>Great Schools</h1>
+          <h3>For Black Students</h3>
+        </div>
        <SearchBarMenu />
        <FilterOptions />
       </header>
