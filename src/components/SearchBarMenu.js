@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Input, Menu } from 'semantic-ui-react'
-import logo from '../styles/images/logo.png'
+
 
 export default class SearchBarMenu extends Component {
   state = { activeItem: 'home' }
