@@ -1,7 +1,7 @@
 #resultsSection {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    gap: 35px;
     padding: 0 60px 40px 60px;
 
     .ui.segments {
@@ -13,3 +13,10 @@
     margin: 20px !important;
     border: 2px solid rgba(57, 57, 58, 0.15);
 }
+
+#map.ui.segments, .ui.segments:not(.horizontal)>.segment:only-child {
+    background: $darkGreen;
+    border-top-left-radius: 50px !important;
+    border-bottom-right-radius: 50px;
+}
+

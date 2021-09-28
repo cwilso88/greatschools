@@ -7,12 +7,14 @@ const Map = () => {
       display: "block",
       marginLeft: "auto",
       marginRight: "auto",
-      width: "100%"
+      width: "100%",
+      borderTopLeftRadius: "50px",
+      borderBottomRightRadius: "50px"
   }
     return(
     <Segment.Group id="map">
       <Segment>
-        <img style={image} src={classImg} alt="class" loading="eager" height="575" width="583" />
+        <img style={image} src={classImg} alt="class" loading="eager" height="475" width="483" />
       </Segment>
     </Segment.Group>
     )

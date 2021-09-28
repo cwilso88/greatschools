@@ -16,7 +16,7 @@ export default class SearchBarMenu extends Component {
 
         </div>
         <Menu.Item
-          name='Search School'
+          name='Find a great school for your child'
         />
         <Menu.Menu>
           <Menu.Item>
