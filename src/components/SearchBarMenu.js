@@ -12,7 +12,7 @@ export default class SearchBarMenu extends Component {
 
     return (
       <Menu secondary id="searchBarMenu">
-        <div className="logo c ">
+        <div className="logo">
 
         </div>
         <Menu.Item
