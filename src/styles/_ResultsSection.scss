@@ -1,13 +1,15 @@
 #resultsSection {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 35px;
+    gap: 15px;
     padding: 0 60px 40px 60px;
+    
 
     .ui.segments {
         margin: 0;
     }
 }
+
 
 #schoolList .ui.segment {
     margin: 20px !important;
@@ -15,8 +17,6 @@
 }
 
 #map.ui.segments, .ui.segments>.segment:only-child {
-    background: $darkGreen;
-    border-top-left-radius: 50px !important;
-    border-bottom-right-radius: 50px !important;
+    background: $green;
 }
 

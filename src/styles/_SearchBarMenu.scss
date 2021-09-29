@@ -15,3 +15,12 @@
         background-size: cover;
     }
 }
+
+.ui.icon.input>i.icon:not(.link) {
+    color: $darkGreen;
+    font-size: 1rem;
+}
+
+.ui.input.focus>input, .ui.input>input:focus {
+    border-color: $darkGreen !important;
+}
