@@ -15,12 +15,12 @@ const SchoolItem = () => {
         color: "#2b6777",
         borderStyle: "solid",
         borderWidth: "4px",
-        backgroundColor: "#005954",
-        borderColor: "#80aca9"
+        backgroundColor: "#c8d8e4",
+        borderColor: "#52ab98",
     }
   return (
     <div id="schoolItem" className="school-list-item">
-      <div className="content-container" style={{display:"flex", gap:"10px"}}>
+      <div className="content-container" style={{display:"flex", gap:"20px"}}>
         <div>
           <div className="circle-rating" style={circle}>9</div>
         </div>
