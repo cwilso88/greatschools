@@ -1,4 +1,5 @@
 import React from 'react'
+import { Icon } from 'semantic-ui-react'
 
 
 const SchoolItem = () => {
@@ -55,13 +56,8 @@ const SchoolItem = () => {
     </span>
   </div>
   <div style={{ marginTop: 5 }}>
-    <a
-      className="icon icon-house active"
-      href="https://www.zillow.com/GA-30317?cbpartner=Great+Schools&utm_source=Great_Schools&utm_medium=referral&utm_campaign=districtpage_schoollistings"
-      target="_blank" rel="noreferrer"
-    >
+        <Icon name='home' size='small' />
       <span> Homes for sale</span>
-    </a>
   </div>
 </div>
       </div>
