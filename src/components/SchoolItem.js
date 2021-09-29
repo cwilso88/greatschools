@@ -12,9 +12,11 @@ const SchoolItem = () => {
         width: "50px",
         textAlign: "center",
         fontSize: "25px",
-        color: `$darkGreen`,
+        color: "#2b6777",
         borderStyle: "solid",
-        borderWidth: "4px"
+        borderWidth: "4px",
+        backgroundColor: "#005954",
+        borderColor: "#80aca9"
     }
   return (
     <div id="schoolItem" className="school-list-item">
