@@ -26,6 +26,17 @@ const SchoolItem = () => {
       gap: "10px"
   }
 
+  const filledStar = {
+      color: "#FFD700",
+  }
+
+  const emptyStar = {
+      
+      color: "#FFD700",
+  }
+
+  
+
 
 
   return (
@@ -61,9 +72,9 @@ const SchoolItem = () => {
               <div className="five-star-rating">
                 <div className="five-star-rating__stars fsr-medium">
                   <span className="five-stars">
-                    <Icon className="star outline icon filled-star"></Icon>
-                    <Icon className="star outline icon filled-star"></Icon>
-                    <Icon className="star outline icon filled-star"></Icon>
+                    <Icon className="star icon filled-star" style={filledStar}></Icon>
+                    <Icon className="star icon filled-star" style={filledStar}></Icon>
+                    <Icon className="star outline icon filled-star" style={emptyStar}></Icon>
                     <Icon className="star outline icon filled-star"></Icon>
                     <Icon className="star outline icon empty-star"></Icon>
                   </span>
