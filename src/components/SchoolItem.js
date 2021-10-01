@@ -35,6 +35,15 @@ const SchoolItem = () => {
       color: "#FFD700",
   }
 
+  const heartStyle = {
+    cursor: "pointer"
+  }
+
+  const heartActive = {
+    color: "#4183c4",
+    fontFamily: "Icons"
+  }
+
   
 
 
@@ -97,7 +106,7 @@ const SchoolItem = () => {
           </div>
         </div>
         <span>
-        <Icon className="heart outline icon"></Icon>
+        <Icon className="heart outline icon" style={heartStyle}></Icon>
         </span>
       </div>
     </div>
