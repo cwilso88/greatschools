@@ -56,12 +56,18 @@ const SchoolItem = () => {
       color: "#52ab98"
   }
 
+  const boxShadowStyle = {
+    boxShadow: `1px 0px 12px 1px rgba(0,0,0,0.75)`
+  }
+
   
 
 
 
   return (
-    <div id="schoolItem" className="school-list-item">
+    <div id="schoolItem" 
+         className="school-list-item"
+         >
       <div
         className="content-container"
         style={{ display: "flex", gap: "20px" }}
