@@ -19,6 +19,15 @@ const SchoolItem = () => {
     backgroundColor: "#c8d8e4",
     borderColor: "#52ab98",
   };
+
+  const ratingStyles = {
+      display: "flex",
+      flexDirection: "row",
+      gap: "10px"
+  }
+
+
+
   return (
     <div id="schoolItem" className="school-list-item">
       <div
@@ -42,7 +51,7 @@ const SchoolItem = () => {
           </div>
           <br/>
           <p className="students">Public Charter, PK-5 | 994 students</p>
-          <div className="five-star-review">
+          <div className="five-star-review" style={ratingStyles}>
             <span>
               <a href="/georgia/atlanta/2465-Charles-R.-Drew-Charter-School/reviews">
                 36 Reviews
