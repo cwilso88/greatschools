@@ -37,10 +37,10 @@ const SchoolItem = () => {
           >
             Charles R. Drew Charter School
           </a>
-          <br/>
           <div className="address">
             301 East Lake Boulevard Southeast, Atlanta, GA, 30317
           </div>
+          <br/>
           <p className="students">Public Charter, PK-5 | 994 students</p>
           <div className="five-star-review">
             <span>
@@ -52,11 +52,11 @@ const SchoolItem = () => {
               <div className="five-star-rating">
                 <div className="five-star-rating__stars fsr-medium">
                   <span className="five-stars">
-                    <span className="icon-star filled-star" />
-                    <span className="icon-star filled-star" />
-                    <span className="icon-star filled-star" />
-                    <span className="icon-star filled-star" />
-                    <span className="icon-star empty-star" />
+                    <Icon className="star outline icon filled-star"></Icon>
+                    <Icon className="star outline icon filled-star"></Icon>
+                    <Icon className="star outline icon filled-star"></Icon>
+                    <Icon className="star outline icon filled-star"></Icon>
+                    <Icon className="star outline icon empty-star"></Icon>
                   </span>
                 </div>
               </div>
