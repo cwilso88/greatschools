@@ -36,12 +36,24 @@ const SchoolItem = () => {
   }
 
   const heartStyle = {
-    cursor: "pointer"
+    cursor: "pointer",
+    float: "right",
+    width: "auto",
+    color: "#1dace5",
+    fontSize: "17px"
   }
 
-  const heartActive = {
-    color: "#4183c4",
+  const active = {
+    color: "#2b6777",
     fontFamily: "Icons"
+  }
+
+  const schoolInfo = {
+      width: "80%"
+  }
+
+  const fontColor ={
+      color: "#52ab98"
   }
 
   
@@ -59,10 +71,11 @@ const SchoolItem = () => {
             9
           </div>
         </div>
-        <div className="school-info">
+        <div className="school-info" style={schoolInfo}>
           <a
             href="/georgia/atlanta/2465-Charles-R.-Drew-Charter-School/"
             className="name"
+            style={fontColor}
           >
             Charles R. Drew Charter School
           </a>
@@ -72,7 +85,9 @@ const SchoolItem = () => {
           <p className="students">Public Charter, PK-5 | 994 students</p>
           <div className="five-star-review" style={ratingStyles}>
             <span>
-              <a href="/georgia/atlanta/2465-Charles-R.-Drew-Charter-School/reviews">
+              <a 
+                href="/georgia/atlanta/2465-Charles-R.-Drew-Charter-School/reviews"
+                style={fontColor}>
                 36 Reviews
               </a>
             </span>
@@ -93,20 +108,21 @@ const SchoolItem = () => {
           <br />
           <div className="homes-for-sale">
             <span className="icon icon-house">
-              <Icon name="home" />
+              <Icon name="home" style={active}/>
             </span>
             <a
               href="https://www.zillow.com/GA-30317?cbpartner=Great+Schools&amp;utm_source=GreatSchools&amp;utm_medium=referral&amp;utm_campaign=schoolsearch"
               target="_blank"
               class="homes-for-sale-link"
               rel="noreferrer"
+              style={fontColor}
             >
               &nbsp; Homes for sale
             </a>
           </div>
         </div>
         <span>
-        <Icon className="heart outline icon" style={heartStyle}></Icon>
+        <Icon className="heart outline icon" style={heartStyle, active}></Icon>
         </span>
       </div>
     </div>
