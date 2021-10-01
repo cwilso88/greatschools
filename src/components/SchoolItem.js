@@ -27,11 +27,11 @@ const SchoolItem = () => {
   }
 
   const filledStar = {
+      fontFamily: "Icons",
       color: "#FFD700",
   }
 
   const emptyStar = {
-      
       color: "#FFD700",
   }
 
@@ -60,7 +60,6 @@ const SchoolItem = () => {
           <div className="address">
             301 East Lake Boulevard Southeast, Atlanta, GA, 30317
           </div>
-          <br/>
           <p className="students">Public Charter, PK-5 | 994 students</p>
           <div className="five-star-review" style={ratingStyles}>
             <span>
@@ -74,14 +73,15 @@ const SchoolItem = () => {
                   <span className="five-stars">
                     <Icon className="star icon filled-star" style={filledStar}></Icon>
                     <Icon className="star icon filled-star" style={filledStar}></Icon>
-                    <Icon className="star outline icon filled-star" style={emptyStar}></Icon>
-                    <Icon className="star outline icon filled-star"></Icon>
-                    <Icon className="star outline icon empty-star"></Icon>
+                    <Icon className="star outline icon filled-star" style={filledStar}></Icon>
+                    <Icon className="star outline icon filled-star" style={filledStar}></Icon>
+                    <Icon className="star outline icon empty-star" style={emptyStar}></Icon>
                   </span>
                 </div>
               </div>
             </span>
           </div>
+          <br />
           <div className="homes-for-sale">
             <span className="icon icon-house">
               <Icon name="home" />
