@@ -125,7 +125,7 @@ const SchoolItem = () => {
           </div>
         </div>
         <span>
-        <Icon className="heart outline icon" style={heartStyle, active}></Icon>
+        <Icon className="heart outline icon" style={{heartStyle, active}}></Icon>
         </span>
       </div>
     </div>

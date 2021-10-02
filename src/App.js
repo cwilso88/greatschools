@@ -15,7 +15,11 @@ class App extends React.Component {
       schoolData
     }
   }
+ 
   render() {
+
+    console.log(this.state.schoolData);
+
     const mainStyle = {
       background: '#f2f2f2',
       marginTop: '30px',
