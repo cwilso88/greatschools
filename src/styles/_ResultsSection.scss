@@ -18,5 +18,14 @@
 
 #map.ui.segments, .ui.segments>.segment:only-child {
     background: $green;
+    height: fit-content;
+}
+
+#location a.section{
+    color: $darkGreen;
+ }
+
+ .ui.segments {
+    margin: 20px;
 }
 

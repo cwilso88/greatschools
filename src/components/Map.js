@@ -11,7 +11,6 @@ const Map = () => {
       borderTopLeftRadius: "50px",
       borderBottomRightRadius: "50px", 
       boxShadow: `0px 1px 20px 1px #2b6777`,
-      transform: "translate(0, 10px)"
   }
     return(
     <Segment.Group id="map">
