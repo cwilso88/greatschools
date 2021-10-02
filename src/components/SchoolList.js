@@ -3,6 +3,10 @@ import { Segment } from 'semantic-ui-react'
 import SchoolItem from './SchoolItem';
 
 export default class SchoolList extends React.Component {
+  constructor() {
+    super()
+    this.loopSchools = this.loopSchools.bind(this)
+  }
   //Methods for the search results
   loopSchools() {
     const { schoolData } = this.props;
