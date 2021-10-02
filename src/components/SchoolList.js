@@ -3,6 +3,12 @@ import { Segment } from 'semantic-ui-react'
 import SchoolItem from './SchoolItem';
 
 export default class SchoolList extends React.Component {
+  
+  //Methods for the search results
+  loopListings() {
+    
+  }
+  
   render() {
     return (
       <Segment.Group id="schoolList">

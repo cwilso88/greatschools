@@ -1,4 +1,4 @@
-export const schoolData = [
+const schoolData = [
     {
         "id": 1,
         "name": "KIPP South Fulton Academy School",
@@ -280,3 +280,5 @@ export const schoolData = [
         "starRating": "4-star-rating"
     },
 ];
+
+export default schoolData;
