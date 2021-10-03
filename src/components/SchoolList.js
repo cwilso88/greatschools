@@ -4,22 +4,14 @@ import SchoolItem from './SchoolItem'
 
 
 
-export default class SchoolList extends React.Component {
-  
-  //Methods for the search results
-  loopSchools() {
-    const { schoolData } = this.props;
-
-    return schoolData.map((school) => {
-      return (
-        <Segment key={school.id} style={{ boxShadow: `1px 0px 12px -3px rgba(0,0,0,0.75)` }}>
-          <SchoolItem schoolData={this.props.schoolData}/>
-        </Segment>
-      );
-    });
-  }
-
+class SchoolList extends React.Component {
   render() {
-    return <Segment.Group id="schoolList">{this.loopSchools()}</Segment.Group>;
-  }
+    return (
+      <Segment.Group id="schoolList">
+        <SchoolItem schoolData={this.props.schoolData} />
+      </Segment.Group>
+    );
+  };
 }
+  
+export default SchoolList;

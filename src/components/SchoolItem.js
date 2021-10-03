@@ -1,5 +1,6 @@
 import React from 'react'
 import { Icon } from 'semantic-ui-react'
+import { Segment } from 'semantic-ui-react'
 
 
 const SchoolItem = (props) => {
@@ -58,7 +59,11 @@ const SchoolItem = (props) => {
       color: "#52ab98"
   }
 
-
+// ADD CLASS ACTIVE TO HEART ONCLICK
+function handleHEARTCLICK(e) {
+  e.preventDefault();
+  console.log('You clicked the heart.');
+}
   
 console.log(props.schoolData)
 let loopSchoolData = () => {
@@ -66,6 +71,10 @@ let loopSchoolData = () => {
 
   return schoolData.map((school) => {
     return (
+      <Segment style={{ boxShadow: `1px 0px 12px -3px rgba(0,0,0,0.75)` }}>
+      <div id="schoolItem" 
+         className="school-list-item"
+         >
       <div
         className="content-container"
         style={{ display: "flex", gap: "20px" }}
@@ -81,18 +90,18 @@ let loopSchoolData = () => {
             className="name"
             style={fontColor}
           >
-            Charles R. Drew Charter School
+            {school.name}
           </a>
           <div className="address">
-            301 East Lake Boulevard Southeast, Atlanta, GA, 30317
+            {school.address}
           </div>
-          <p className="students">Public Charter, PK-5 | 994 students</p>
+          <p className="students">{school.district}, {school.grades} | {school.totalStudentsEnrolled} students</p>
           <div className="five-star-review" style={ratingStyles}>
             <span>
               <a 
                 href="/georgia/atlanta/2465-Charles-R.-Drew-Charter-School/reviews"
                 style={fontColor}>
-                36 Reviews
+                {school.reviews} Reviews
               </a>
             </span>
             <span>
@@ -126,9 +135,13 @@ let loopSchoolData = () => {
           </div>
         </div>
         <span>
-        <Icon className="heart outline icon" style={{heartStyle, active}}></Icon>
+        <Icon className="heart outline icon" 
+              style={heartStyle}
+              onClick={handleHEARTCLICK}></Icon>
         </span>
       </div>
+      </div>
+      </Segment>
     )
   })
 }
@@ -136,12 +149,13 @@ let loopSchoolData = () => {
 
 
 
+
+
+
   return (
-    <div id="schoolItem" 
-         className="school-list-item"
-         >
+    <Segment.Group id="schoolList">
       {loopSchoolData()}
-    </div>
+    </Segment.Group>
   );
 };
 
