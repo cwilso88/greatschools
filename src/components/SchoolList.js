@@ -1,12 +1,11 @@
 import React from 'react'
 import { Segment } from 'semantic-ui-react'
-import SchoolItem from './SchoolItem';
+import SchoolItem from './SchoolItem'
+
+
 
 export default class SchoolList extends React.Component {
-  constructor() {
-    super()
-    this.loopSchools = this.loopSchools.bind(this)
-  }
+  
   //Methods for the search results
   loopSchools() {
     const { schoolData } = this.props;
@@ -14,7 +13,7 @@ export default class SchoolList extends React.Component {
     return schoolData.map((school) => {
       return (
         <Segment key={school.id} style={{ boxShadow: `1px 0px 12px -3px rgba(0,0,0,0.75)` }}>
-          <SchoolItem />
+          <SchoolItem schoolData={this.props.schoolData}/>
         </Segment>
       );
     });

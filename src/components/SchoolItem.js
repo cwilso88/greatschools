@@ -2,7 +2,9 @@ import React from 'react'
 import { Icon } from 'semantic-ui-react'
 
 
-const SchoolItem = () => {
+const SchoolItem = (props) => {
+
+  
   const circle = {
     display: "flex",
     justifyContent: "center",
@@ -58,20 +60,19 @@ const SchoolItem = () => {
 
 
   
+console.log(props.schoolData)
+let loopSchoolData = () => {
+  const { schoolData } = props;
 
-
-
-  return (
-    <div id="schoolItem" 
-         className="school-list-item"
-         >
+  return schoolData.map((school) => {
+    return (
       <div
         className="content-container"
         style={{ display: "flex", gap: "20px" }}
       >
         <div>
           <div className="circle-rating" style={circle}>
-            9
+            {school.rating}
           </div>
         </div>
         <div className="school-info" style={schoolInfo}>
@@ -128,6 +129,18 @@ const SchoolItem = () => {
         <Icon className="heart outline icon" style={{heartStyle, active}}></Icon>
         </span>
       </div>
+    )
+  })
+}
+
+
+
+
+  return (
+    <div id="schoolItem" 
+         className="school-list-item"
+         >
+      {loopSchoolData()}
     </div>
   );
 };
