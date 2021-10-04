@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Icon } from 'semantic-ui-react'
 import { Segment } from 'semantic-ui-react'
 
 
 const SchoolItem = (props) => {
 
-  
+  // SET STATE FOR THE HEART CLASS
+  const [isActive, setActive ] = useState("false");
+
+  // ADD CLASS ACTIVE TO HEART ONCLICK
+  const handleHEARTCLICK  = () => {
+    setActive(!isActive);
+    console.log("active class added!");
+  };
+
   const circle = {
     display: "flex",
     justifyContent: "center",
@@ -38,19 +46,6 @@ const SchoolItem = (props) => {
       color: "#FFD700",
   }
 
-  const heartStyle = {
-    cursor: "pointer",
-    float: "right",
-    width: "auto",
-    color: "#1dace5",
-    fontSize: "17px"
-  }
-
-  const active = {
-    color: "#2b6777",
-    fontFamily: "Icons"
-  }
-
   const schoolInfo = {
       width: "80%"
   }
@@ -59,11 +54,6 @@ const SchoolItem = (props) => {
       color: "#52ab98"
   }
 
-// ADD CLASS ACTIVE TO HEART ONCLICK
-function handleHEARTCLICK(e) {
-  e.preventDefault();
-  console.log('You clicked the heart.');
-}
   
 console.log(props.schoolData)
 let loopSchoolData = () => {
@@ -71,7 +61,7 @@ let loopSchoolData = () => {
 
   return schoolData.map((school) => {
     return (
-      <Segment style={{ boxShadow: `1px 0px 12px -3px rgba(0,0,0,0.75)` }}>
+      <Segment key={school.id} style={{ boxShadow: `1px 0px 12px -3px rgba(0,0,0,0.75)` }}>
       <div id="schoolItem" 
          className="school-list-item"
          >
@@ -121,7 +111,7 @@ let loopSchoolData = () => {
           <br />
           <div className="homes-for-sale">
             <span className="icon icon-house">
-              <Icon name="home" style={active}/>
+              <Icon name="home"/>
             </span>
             <a
               href="https://www.zillow.com/GA-30317?cbpartner=Great+Schools&amp;utm_source=GreatSchools&amp;utm_medium=referral&amp;utm_campaign=schoolsearch"
@@ -135,8 +125,7 @@ let loopSchoolData = () => {
           </div>
         </div>
         <span>
-        <Icon className="heart outline icon" 
-              style={heartStyle}
+        <Icon className="heart outline icon"
               onClick={handleHEARTCLICK}></Icon>
         </span>
       </div>

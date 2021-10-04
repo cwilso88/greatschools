@@ -29,3 +29,16 @@
     margin: 20px;
 }
 
+i.icon.heart.outline {
+    cursor: pointer;
+    float: right;
+    width: auto;
+    color: #1dace5;
+    font-size: 17px;
+}
+
+i.icon.heart.outline.active {
+    color: #2b6777;
+    font-family: Icons;
+}
+

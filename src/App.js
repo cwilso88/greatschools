@@ -28,7 +28,7 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <header className="header" style={{padding:'40px 60px'}}> 
+        <header className="header" style={{padding:'0 60px'}}> 
          <SearchBarMenu />
          <FilterOptions />
         </header>

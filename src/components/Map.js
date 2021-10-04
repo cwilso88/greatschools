@@ -7,6 +7,7 @@ const Map = () => {
       display: "block",
       marginLeft: "auto",
       marginRight: "auto",
+      objectFit: "cover",
       width: "100%",
       borderTopLeftRadius: "50px",
       borderBottomRightRadius: "50px", 
