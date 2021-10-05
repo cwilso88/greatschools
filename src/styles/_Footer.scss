@@ -1,0 +1,33 @@
+footer#footer {
+    background-color: $darkGreen;
+    color: $white;
+    height: 400px;
+
+    .footer-container {
+        line-height: 1.5;
+        padding: 30px 150px;
+        
+    }
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 400px 1fr 1fr 1fr;
+        grid-template-rows: minmax(40vh, 1fr);
+        gap: 15px;
+        justify-items: center;
+        align-items: center;
+        
+        ul {
+            padding-left: 0;
+        }
+        li {
+            color: $green;
+            list-style: none;        }
+        }
+
+        i.icon {
+            color: $white;
+            padding-right: 5px;
+        }
+
+}

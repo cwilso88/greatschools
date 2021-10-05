@@ -4,6 +4,7 @@ import Location from "./components/Location";
 import SchoolList from "./components/SchoolList";
 import schoolData from "./data/schoolData";
 import Map from "./components/Map";
+import Footer from "./components/Footer";
 import './styles/main.scss';
 import React from "react";
 
@@ -41,6 +42,7 @@ class App extends React.Component {
             <Map />
           </div>
         </main>
+        <Footer />
       </div>
     );
   } 
