@@ -48,6 +48,7 @@ const Footer = () => {
                             </ul>
                         </div>
                     </div>
+                    <div className="rights">©2021-2022 GreatSchools for African American students in Georgia. Created by Chasity De La Cruz</div>
                 </div>
             </footer>
         )

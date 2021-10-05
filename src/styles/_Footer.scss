@@ -6,6 +6,9 @@ footer#footer {
     .footer-container {
         line-height: 1.5;
         padding: 30px 150px;
+        .rights{
+            text-align: center;
+        } 
         
     }
 
@@ -28,6 +31,5 @@ footer#footer {
         i.icon {
             color: $white;
             padding-right: 5px;
-        }
-
+        }   
 }
