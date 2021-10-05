@@ -3,6 +3,9 @@
     grid-template-columns: 1fr 1fr;
     gap: 15px;
     padding: 0 60px 40px 60px;
+    overflow: scroll;
+    height: 70vh;
+    
     
 
     .ui.segments {
@@ -16,9 +19,16 @@
     border: 2px solid rgba(57, 57, 58, 0.15);
 }
 
+#map {
+    position: sticky;
+    top: 0;
+    position: sticky;
+}
+
 #map.ui.segments, .ui.segments>.segment:only-child {
     background: $green;
     height: fit-content;
+    position: sticky !important;
 }
 
 #location a.section{

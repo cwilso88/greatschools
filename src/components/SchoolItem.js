@@ -9,7 +9,8 @@ const SchoolItem = (props) => {
   const [isActive, setActive ] = useState("false");
 
   // ADD CLASS ACTIVE TO HEART ONCLICK
-  const handleHEARTCLICK  = () => {
+  const handleHEARTCLICK = (e) => {
+    e.stopPropagation()
     setActive(!isActive);
     console.log("active class added!");
   };
@@ -54,8 +55,7 @@ const SchoolItem = (props) => {
       color: "#52ab98"
   }
 
-  
-console.log(props.schoolData)
+//TBD FIX THE handleHEARTCLICK FUNC
 let loopSchoolData = () => {
   const { schoolData } = props;
 
@@ -125,7 +125,7 @@ let loopSchoolData = () => {
           </div>
         </div>
         <span>
-        <Icon className="heart outline icon"
+        <Icon className={`heart outline icon ${isActive ? `active` : `` }`}
               onClick={handleHEARTCLICK}></Icon>
         </span>
       </div>

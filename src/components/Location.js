@@ -16,7 +16,7 @@ const style = {
 const Location = () => (
   <div id="location">
       <Breadcrumb icon='right angle' sections={sections} />
-      <h3>Showing <span className="number">500</span> schools found in <span className="city" style={style}>Atlanta, GA</span></h3>
+      <h3>Showing <span className="number">20</span> schools found in <span className="city" style={style}>Atlanta, GA</span></h3>
   </div>
 )
 

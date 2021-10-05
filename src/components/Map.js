@@ -1,5 +1,5 @@
 import React from 'react'
-import { Segment } from 'semantic-ui-react';
+import { Segment} from 'semantic-ui-react';
 import classImg from '../styles/images/grads.jpeg'
 
 const Map = () => {
@@ -12,6 +12,7 @@ const Map = () => {
       borderTopLeftRadius: "50px",
       borderBottomRightRadius: "50px", 
       boxShadow: `0px 1px 20px 1px #2b6777`,
+      position: "sticky"
   }
     return(
     <Segment.Group id="map">
