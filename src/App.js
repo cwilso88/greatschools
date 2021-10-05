@@ -3,7 +3,7 @@ import FilterOptions from "./components/FilterOptions";
 import Location from "./components/Location";
 import SchoolList from "./components/SchoolList";
 import schoolData from "./data/schoolData";
-import Map from "./components/Map";
+import Image from "./components/Image";
 import Footer from "./components/Footer";
 import './styles/main.scss';
 import React from "react";
@@ -39,7 +39,7 @@ class App extends React.Component {
           </div>
           <div id="resultsSection">
             <SchoolList schoolData={this.state.schoolData}/>
-            <Map />
+            <Image />
           </div>
         </main>
         <Footer />

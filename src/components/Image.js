@@ -2,7 +2,7 @@ import React from 'react'
 import { Segment} from 'semantic-ui-react';
 import classImg from '../styles/images/grads.jpeg'
 
-const Map = () => {
+const Image = () => {
   const image = {
       display: "block",
       marginLeft: "auto",
@@ -23,4 +23,4 @@ const Map = () => {
     )
 }
 
-export default Map;
+export default Image;
