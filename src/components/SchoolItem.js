@@ -126,7 +126,11 @@ let loopSchoolData = () => {
         </div>
         <span>
         <Icon className={`heart outline icon ${isActive ? `active` : `` }`}
-              onClick={handleHEARTCLICK}></Icon>
+              //TBD UPDATE HANDLEHEARTCLICK TO WORK 
+              //SO THAT USER CAN CLICK ON THE HEART
+              //AND ONLY THAT HEART HAS THE ACTIVE 
+              //CLASS ADDED TO IT
+              onClick=''></Icon>
         </span>
       </div>
       </div>
