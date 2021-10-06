@@ -7,57 +7,23 @@ const SchoolItem = (props) => {
 
   // SET STATE FOR THE HEART CLASS
   const [isActive, setActive ] = useState("false");
+  
 
   // ADD CLASS ACTIVE TO HEART ONCLICK
-  const handleHEARTCLICK = (e) => {
-    e.stopPropagation()
+  const clickHandler = () => {
+    
     setActive(!isActive);
     console.log("active class added!");
   };
 
-  const circle = {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    fontWeight: "700",
-    borderRadius: "50%",
-    height: "50px",
-    width: "50px",
-    textAlign: "center",
-    fontSize: "25px",
-    color: "#2b6777",
-    borderStyle: "solid",
-    borderWidth: "4px",
-    backgroundColor: "#c8d8e4",
-    borderColor: "#52ab98",
-  };
-
-  const ratingStyles = {
-      display: "flex",
-      flexDirection: "row",
-      gap: "10px"
-  }
-
-  const filledStar = {
-      fontFamily: "Icons",
-      color: "#FFD700",
-  }
-
-  const emptyStar = {
-      color: "#FFD700",
-  }
-
-  const schoolInfo = {
-      width: "80%"
-  }
-
-  const fontColor ={
-      color: "#52ab98"
-  }
+  
 
 //TBD FIX THE handleHEARTCLICK FUNC
 let loopSchoolData = () => {
   const { schoolData } = props;
+
+
+  // MAPPING THROUGH EACH SCHOOL ITEM FROM JSON TO
 
   return schoolData.map((school) => {
     return (
@@ -70,15 +36,14 @@ let loopSchoolData = () => {
         style={{ display: "flex", gap: "20px" }}
       >
         <div>
-          <div className="circle-rating" style={circle}>
+          <div className="circle-rating">
             {school.rating}
           </div>
         </div>
-        <div className="school-info" style={schoolInfo}>
+        <div className="school-info">
           <a
             href="/georgia/atlanta/2465-Charles-R.-Drew-Charter-School/"
             className="name"
-            style={fontColor}
           >
             {school.name}
           </a>
@@ -86,11 +51,11 @@ let loopSchoolData = () => {
             {school.address}
           </div>
           <p className="students">{school.district}, {school.grades} | {school.totalStudentsEnrolled} students</p>
-          <div className="five-star-review" style={ratingStyles}>
+          <div className="five-star-review">
             <span>
               <a 
                 href="/georgia/atlanta/2465-Charles-R.-Drew-Charter-School/reviews"
-                style={fontColor}>
+                >
                 {school.reviews} Reviews
               </a>
             </span>
@@ -98,11 +63,11 @@ let loopSchoolData = () => {
               <div className="five-star-rating">
                 <div className="five-star-rating__stars fsr-medium">
                   <span className="five-stars">
-                    <Icon className="star icon filled-star" style={filledStar}></Icon>
-                    <Icon className="star icon filled-star" style={filledStar}></Icon>
-                    <Icon className="star outline icon filled-star" style={filledStar}></Icon>
-                    <Icon className="star outline icon filled-star" style={filledStar}></Icon>
-                    <Icon className="star outline icon empty-star" style={emptyStar}></Icon>
+                    <Icon className="star icon filled-star"></Icon>
+                    <Icon className="star icon filled-star"></Icon>
+                    <Icon className="star outline icon filled-star"></Icon>
+                    <Icon className="star outline icon filled-star"></Icon>
+                    <Icon className="star outline icon empty-star"></Icon>
                   </span>
                 </div>
               </div>
@@ -118,7 +83,6 @@ let loopSchoolData = () => {
               target="_blank"
               class="homes-for-sale-link"
               rel="noreferrer"
-              style={fontColor}
             >
               &nbsp; Homes for sale
             </a>
@@ -130,7 +94,7 @@ let loopSchoolData = () => {
               //SO THAT USER CAN CLICK ON THE HEART
               //AND ONLY THAT HEART HAS THE ACTIVE 
               //CLASS ADDED TO IT
-              onClick=''></Icon>
+              onClick={clickHandler}></Icon>
         </span>
       </div>
       </div>

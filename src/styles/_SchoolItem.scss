@@ -1,6 +1,45 @@
+#schoolItem {
+    .circle-rating {
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: 25px;
+    color: #2b6777;
+    border-style: solid;
+    border-width: 4px;
+    background-color: #c8d8e4;
+    border-color: #52ab98;
+    }
+    .school-info {
+        width: 80%;
+        a {
+            color: #52ab98;
+        }
+    }
 
+    .five-star-review {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
 
-i.icon.star.filled-star {
-    color:#FFD700 !important;
+    .five-star-rating {
+        .five-stars {
+            .filled-star {
+                font-family: Icons;
+                color: #FFD700;
+            }
+            .empty-star {
+                color: #FFD700;
+            }
+        }
+    }
 }
+
+
     
