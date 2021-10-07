@@ -1,17 +1,21 @@
 import React from 'react'
 import { Segment } from 'semantic-ui-react'
+import schoolData from '../data/schoolData';
 import SchoolItem from './SchoolItem'
 
 
 
-class SchoolList extends React.Component {
-  render() {
+function SchoolList() {
     return (
+      // Map through the schoolData and 
+      // return each school's data and 
+      // pass that data down to the SchoolItem component for usage
       <Segment.Group id="schoolList">
-        <SchoolItem schoolData={this.props.schoolData} />
+        {schoolData.map((school) => {
+          return <SchoolItem school={school} />
+        })}
       </Segment.Group>
     );
-  };
 }
   
 export default SchoolList;
