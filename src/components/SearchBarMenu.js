@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Input, Menu } from 'semantic-ui-react'
+import { Menu } from 'semantic-ui-react'
+import Searchbar from './Searchbar'
 
 
 export default class SearchBarMenu extends Component {
@@ -20,7 +21,7 @@ export default class SearchBarMenu extends Component {
         />
         <Menu.Menu>
           <Menu.Item>
-            <Input icon='search' placeholder='City, zip, or school' />
+            <Searchbar />
           </Menu.Item>
           </Menu.Menu>
           <Menu.Menu position='right'>
