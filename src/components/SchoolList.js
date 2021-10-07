@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Segment } from 'semantic-ui-react'
 import schoolData from '../data/schoolData';
 import SchoolItem from './SchoolItem'
+import AboutUs from './AboutUs';
 
 
 
@@ -22,7 +23,7 @@ function SchoolList() {
       </Segment.Group>
     );
   } else {
-    return <div>Hi Friends</div>
+    return <AboutUs />
   }
   
 }

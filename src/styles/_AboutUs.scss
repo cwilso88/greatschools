@@ -1,0 +1,29 @@
+#aboutus {
+    background: $blue;
+    
+    background-image: url("./images/school.svg");
+    background-repeat: no-repeat;
+    background-size: 456px 289px;
+    background-position: 50% 101%;
+    height: fit-content;
+    overflow: hidden;
+    .aboutus-container {
+        display: flex;
+        padding: 20px;
+        
+        .aboutus-content {
+            padding: 50px;
+        }
+        h3 {
+            color: $green;
+        }
+        p {
+            width: 70%;
+        }
+        p:last-child {
+            margin-bottom: 135px;
+            width: 50%;
+        }
+        
+    }
+}
