@@ -1,5 +1,7 @@
+import { placeholder } from '@babel/types'
 import React, { Component } from 'react'
 import { Menu } from 'semantic-ui-react'
+import schoolData from '../data/schoolData'
 import Searchbar from './Searchbar'
 
 
@@ -21,7 +23,7 @@ export default class SearchBarMenu extends Component {
         />
         <Menu.Menu>
           <Menu.Item>
-            <Searchbar />
+            <Searchbar placeholder="City, zip, or school" schoolData={schoolData}/>
           </Menu.Item>
           </Menu.Menu>
           <Menu.Menu position='right'>

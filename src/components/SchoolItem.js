@@ -30,7 +30,7 @@ function SchoolItem({ school }) {
           </div>
           <div className="school-info">
             <a
-              href="/georgia/atlanta/2465-Charles-R.-Drew-Charter-School/"
+              href={school.siteURL}
               className="name"
             >
               {school.name}

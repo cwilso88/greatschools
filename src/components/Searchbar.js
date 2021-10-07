@@ -1,10 +1,12 @@
 import React from 'react'
 import { Input } from 'semantic-ui-react'
 
-function Searchbar() {
+
+function Searchbar({ placeholder, schoolData }) {
+    
     return (
         <span id="searchbar">
-            <Input icon='search' placeholder='City, zip, or school' />
+            <Input icon='search' data={schoolData} placeholder={placeholder} />
         </span>
     )
 }
