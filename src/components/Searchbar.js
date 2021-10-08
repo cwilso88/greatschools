@@ -3,11 +3,13 @@ import { Input } from 'semantic-ui-react'
 
 
 
-function Searchbar({ placeholder, schoolData }) {
+function Searchbar({ placeholder, schoolData, handleFilter }) {
     
+    
+    console.log(handleFilter)
     return (
         <span id="searchbar">
-            <Input icon='search' data={schoolData} placeholder={placeholder} />
+            <Input icon='search' schoolData={schoolData} onChange={handleFilter} placeholder={placeholder} />
         </span>
     )
 }

@@ -1,16 +1,16 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Segment } from 'semantic-ui-react'
-import schoolData from '../data/schoolData';
 import SchoolItem from './SchoolItem'
 import AboutUs from './AboutUs';
+import schoolData from '../data/schoolData';
 
 
 
 function SchoolList() {
-  const [filteredData, setFilteredData] = useState([]);
+  
     
   
-  if (filteredData.length !== 0) {
+  if (schoolData.length !== 0) {
     return (
       // Map through the schoolData and 
       // return each school's data and 

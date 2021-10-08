@@ -1,4 +1,3 @@
-import { placeholder } from '@babel/types'
 import React, { Component } from 'react'
 import { Menu } from 'semantic-ui-react'
 import schoolData from '../data/schoolData'
@@ -9,6 +8,17 @@ export default class SearchBarMenu extends Component {
   state = { activeItem: 'home' }
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+  
+  // TBD UPDATE SEARCHBAR FUNCTIONALITY 
+  handleFilter(event) {
+    const searchWord = event.target.value;
+    const filteredSchools = schoolData.filter((value) => {
+        return value.name.toLowerCase().includes(searchWord.toLowerCase());
+    });
+    this.setState(() => ({
+      schoolData: filteredSchools
+    }));
+}
 
   render() {
     const { activeItem } = this.state
@@ -23,7 +33,7 @@ export default class SearchBarMenu extends Component {
         />
         <Menu.Menu>
           <Menu.Item>
-            <Searchbar placeholder="City, zip, or school" schoolData={schoolData}/>
+            <Searchbar placeholder="City, zip, or school" handleFilter={this.props.handleFilter} schoolData={schoolData}/>
           </Menu.Item>
           </Menu.Menu>
           <Menu.Menu position='right'>

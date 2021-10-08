@@ -13,9 +13,11 @@ class App extends React.Component {
   constructor () {
     super()
     this.state = {
-      schoolData
+      schoolData,
     }
   }
+
+  
  
   render() {
 
@@ -30,7 +32,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="header" style={{padding:'0 60px'}}> 
-         <SearchBarMenu />
+         <SearchBarMenu handleFilter={this.handleFilter} schoolData={this.state.schoolData}/>
          <FilterOptions />
         </header>
         <main style={mainStyle}>
