@@ -2,25 +2,15 @@ import SearchBarMenu from "./features/SearchBarMenu";
 import FilterOptions from "./features/FilterOptions";
 import Location from "./features/Location";
 import SchoolList from "./features/SchoolList";
-import { schoolData } from "./data/schoolData";
+import schoolData from "./data/schoolData";
 import Image from "./features/Image";
 import Footer from "./features/layout/footer";
 import './styles/main.scss';
 import React from "react";
 
 
-class App extends React.Component {
-  constructor () {
-    super()
-    this.state = {
-      schoolData,
-    }
-  }
-
+const App = () => {
   
- 
-  render() {
-
     console.log(this.state.schoolData);
 
     const mainStyle = {
@@ -47,7 +37,6 @@ class App extends React.Component {
         <Footer />
       </div>
     );
-  } 
 }
 
 export default App;
