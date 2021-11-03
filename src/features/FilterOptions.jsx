@@ -10,10 +10,10 @@ import { Button, Dropdown, Menu } from 'semantic-ui-react'
 // about-us.jsx
 
 
-export const FilterOptions = ({ title, description, canonincal, children}) => {
-  const [activeItem, setActiveItem] = 'home';
-  const handleItemClick = (e, { name }) => {
-    setActiveItem(e.target.name)
+export const FilterOptions = () => {
+  const [activeItem, setActiveItem] = useState('');
+  const handleItemClick = (e, {name}) => {
+    setActiveItem(e.target.name);
   }
   //state = { activeItem: 'home' }
 

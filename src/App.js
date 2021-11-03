@@ -1,10 +1,10 @@
-import SearchBarMenu from "./components/SearchBarMenu";
-import FilterOptions from "./components/FilterOptions";
-import Location from "./components/Location";
-import SchoolList from "./components/SchoolList";
-import schoolData from "./data/schoolData";
-import Image from "./components/Image";
-import Footer from "./components/Footer";
+import SearchBarMenu from "./features/SearchBarMenu";
+import FilterOptions from "./features/FilterOptions";
+import Location from "./features/Location";
+import SchoolList from "./features/SchoolList";
+import { schoolData } from "./data/schoolData";
+import Image from "./features/Image";
+import Footer from "./features/layout/footer";
 import './styles/main.scss';
 import React from "react";
 
