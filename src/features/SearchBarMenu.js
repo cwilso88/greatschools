@@ -33,7 +33,7 @@ export default class SearchBarMenu extends Component {
         />
         <Menu.Menu>
           <Menu.Item>
-            <Searchbar placeholder="City, zip, or school" handleFilter={this.props.handleFilter} schoolData={schoolData}/>
+            <Searchbar schoolData={schoolData}/>
           </Menu.Item>
           </Menu.Menu>
           <Menu.Menu position='right'>

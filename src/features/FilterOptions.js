@@ -1,5 +1,14 @@
 import React, { Component } from 'react'
 import { Button, Dropdown, Menu } from 'semantic-ui-react'
+import AboutUs from './AboutUs'
+
+// HOC
+// export default function Component({ title, description, canonincal, children})
+
+// about-us url
+// AboutUs.jsx badly named component
+// about-us.jsx
+
 
 export default class FilterOptions extends Component {
   state = { activeItem: 'home' }
