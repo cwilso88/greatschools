@@ -1,6 +1,6 @@
 import React from 'react'
 import { Segment} from 'semantic-ui-react';
-import classImg from '../styles/images/grads.jpeg'
+import classImg from '../../styles/images/grads.jpeg'
 
 const Image = () => {
   const image = {

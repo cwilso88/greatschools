@@ -1,17 +1,26 @@
-import SearchBarMenu from "./features/SearchBarMenu";
-import FilterOptions from "./features/FilterOptions";
-import Location from "./features/Location";
-import SchoolList from "./features/SchoolList";
+import SearchBarMenu from "./features/search/SearchBarMenu";
+import FilterOptions from "./features/layout/FilterOptions";
+import Location from "./features/layout/breadcrump";
+import SchoolList from "./features/search/SchoolList";
 import schoolData from "./data/schoolData";
-import Image from "./features/Image";
+import Image from "./features/layout/Image";
 import Footer from "./features/layout/footer";
 import './styles/main.scss';
-import React from "react";
+import React, { useState } from "react";
 
 
 const App = () => {
   
-    console.log(this.state.schoolData);
+  const [searchTerm, setSearchTerm] = useState("");
+  const handleInputChange = (e) => {
+    setSearchTerm(e.target.value);
+  }
+
+  // logic to filter through the school list
+  const filteredSchools = schoolData.filter((school) => {
+    return school.name.includes(searchTerm);
+  })
+
 
     const mainStyle = {
       background: '#f2f2f2',
@@ -22,7 +31,7 @@ const App = () => {
     return (
       <div className="App">
         <header className="header" style={{padding:'0 60px'}}> 
-         <SearchBarMenu handleFilter={this.handleFilter} schoolData={this.state.schoolData}/>
+         <SearchBarMenu schools={filteredSchools} name="search" onSearch={handleInputChange} val={searchTerm} />
          <FilterOptions />
         </header>
         <main style={mainStyle}>
@@ -30,7 +39,7 @@ const App = () => {
             <Location />
           </div>
           <div id="resultsSection">
-            <SchoolList schoolData={this.state.schoolData}/>
+            <SchoolList schools={filteredSchools}/>
             <Image />
           </div>
         </main>
