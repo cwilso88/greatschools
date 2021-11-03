@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import { Button, Dropdown, Menu } from 'semantic-ui-react'
-import AboutUs from './AboutUs'
+
 
 // HOC
 // export default function Component({ title, description, canonincal, children})
@@ -10,13 +10,15 @@ import AboutUs from './AboutUs'
 // about-us.jsx
 
 
-export default class FilterOptions extends Component {
-  state = { activeItem: 'home' }
+export const FilterOptions = ({ title, description, canonincal, children}) => {
+  const [activeItem, setActiveItem] = 'home';
+  const handleItemClick = (e, { name }) => {
+    setActiveItem(e.target.name)
+  }
+  //state = { activeItem: 'home' }
 
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
-  render() {
-    const { activeItem } = this.state
+  
 
     return (
       <Menu size='small' id="filterOptions">
@@ -33,22 +35,22 @@ export default class FilterOptions extends Component {
         <Menu.Item
           name='PreK'
           active={activeItem === 'PreK'}
-          onClick={this.handleItemClick}
+          onClick={handleItemClick}
         />
         <Menu.Item
           name='Elementary'
           active={activeItem === 'Elementary'}
-          onClick={this.handleItemClick}
+          onClick={handleItemClick}
         />
         <Menu.Item
           name='Middle'
           active={activeItem === 'Middle'}
-          onClick={this.handleItemClick}
+          onClick={handleItemClick}
         />
         <Menu.Item
           name='High School'
           active={activeItem === 'High School'}
-          onClick={this.handleItemClick}
+          onClick={handleItemClick}
         />
         
         <Menu.Item position="right">
@@ -56,5 +58,4 @@ export default class FilterOptions extends Component {
           </Menu.Item>
       </Menu>
     )
-  }
 }

@@ -1,12 +1,12 @@
 import React from 'react'
 import { Segment } from 'semantic-ui-react'
 import SchoolItem from './SchoolItem'
-import AboutUs from './AboutUs';
-import schoolData from '../data/schoolData';
+import AboutUs from './about-us';
 
 
 
-function SchoolList() {
+
+const SchoolList = ({ schoolData }) => {
   
     
   
