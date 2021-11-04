@@ -13,6 +13,14 @@
     }
 }
 
+@media only screen and (max-width: 768px) {
+    #resultsSection{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+}
+
 
 #schoolList .ui.segment {
     margin: 20px !important;

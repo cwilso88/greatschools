@@ -6,12 +6,12 @@ import schoolData from "./data/schoolData";
 import Image from "./features/layout/Image";
 import Footer from "./features/layout/footer";
 import './styles/main.scss';
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 
 const App = () => {
   
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState(null);
   const handleInputChange = (e) => {
     setSearchTerm(e.target.value);
   }

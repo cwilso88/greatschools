@@ -11,9 +11,9 @@ import { Button, Dropdown, Menu } from 'semantic-ui-react'
 
 
 const FilterOptions = () => {
-  const [activeItem, setActiveItem] = useState('');
-  const handleItemClick = (e, {name}) => {
-    setActiveItem(e.target.name);
+  const [activeItem, setActiveItem] = useState(false);
+  const handleItemClick = () => {
+    setActiveItem(true);
   }
   //state = { activeItem: 'home' }
 
@@ -34,7 +34,7 @@ const FilterOptions = () => {
         
         <Menu.Item
           name='PreK'
-          active={activeItem === 'PreK'}
+          
           onClick={handleItemClick}
         />
         <Menu.Item

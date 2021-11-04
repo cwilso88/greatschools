@@ -1,6 +1,6 @@
 import React from 'react'
 import { Segment } from 'semantic-ui-react'
-import SchoolItem from './SchoolItem'
+import SchoolCard from './SchoolCard'
 import AboutUs from '../layout/about-us';
 
 
@@ -14,11 +14,11 @@ const SchoolList = ({ schools }) => {
     return (
       // Map through the schoolData and 
       // return each school's data and 
-      // pass that data down to the SchoolItem component for usage
+      // pass that data down to the SchoolCard component for usage
       
       <Segment.Group id="schoolList">
           {schools.map((school) => {
-          return <SchoolItem school={school} />
+          return <SchoolCard school={school} />
         })}
       </Segment.Group>
     );

@@ -2,7 +2,13 @@
     .button {
         background-color: $darkGreen;
     }
-    .active.item {
+    
+       a.item:focus {
         background: $blue;
-    }
+       } 
+    
+}
+
+@media only screen and (min-width: 768px) {
+    
 }

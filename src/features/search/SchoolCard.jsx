@@ -3,7 +3,7 @@ import { Icon } from 'semantic-ui-react'
 import { Segment } from 'semantic-ui-react'
 
 
-function SchoolItem({ school }) {
+function SchoolCard({ school }) {
   // SET STATE FOR THE HEART CLASS
   const [isActive, setActive] = useState(false);
 
@@ -20,7 +20,7 @@ function SchoolItem({ school }) {
       key={school.id}
       style={{ boxShadow: `1px 0px 12px -3px rgba(0,0,0,0.75)` }}
     >
-      <div id="schoolItem" className="school-list-item">
+      <div id="SchoolCard" className="school-list-item">
         <div
           className="content-container"
           style={{ display: "flex", gap: "20px" }}
@@ -88,4 +88,4 @@ function SchoolItem({ school }) {
   );
 }
 
-export default SchoolItem;
+export default SchoolCard;
