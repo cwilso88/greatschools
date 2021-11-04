@@ -1,10 +1,10 @@
 @import 'variables.scss';
-@import 'SearchBarMenu';
-@import 'FilterOptions';
-@import 'ResultsSection';
-@import 'SchoolCard';
-@import 'AboutUs';
-@import 'Footer';
+@import '../styles/search/SearchBarMenu';
+@import '../styles/layout/FilterOptions';
+@import '../styles/layout/ResultsSection';
+@import '../styles/search/SchoolCard';
+@import '../styles/layout/about-us';
+@import '../styles/layout/Footer';
 
 
 
