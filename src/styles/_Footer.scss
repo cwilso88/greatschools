@@ -33,3 +33,27 @@ footer#footer {
             padding-right: 5px;
         }   
 }
+
+@media only screen and (max-width: 768px) {
+    footer#footer {
+        height: auto;
+    }
+    footer#footer .footer-grid {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    footer#footer .footer-container{
+        padding: 30px 50px;
+    }
+    footer#footer .footer-about-us{
+        margin-bottom: 50px;
+    }
+
+    footer#footer .rights {
+        margin-top: 50px;
+    }
+}
