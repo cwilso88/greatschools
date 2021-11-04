@@ -3,7 +3,7 @@ import { Menu } from 'semantic-ui-react'
 import Searchbar from '../layout/Searchbar'
 
 
-const SearchBarMenu = ({schools}) => {
+const SearchBarMenu = ({ val, onSearch, schools }) => {
   // Click to activate the filter buttons
   const [activeItem, setActiveItem] = useState('home');
   const handleItemClick = (e, {name}) => {
@@ -20,7 +20,7 @@ const SearchBarMenu = ({schools}) => {
         />
         <Menu.Menu>
           <Menu.Item>
-            <Searchbar schools={schools}/>
+            <Searchbar value={val} onSearch={onSearch} schools={schools}/>
           </Menu.Item>
           </Menu.Menu>
           <Menu.Menu position='right'>

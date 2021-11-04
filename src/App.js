@@ -18,15 +18,15 @@ const App = () => {
 
   // logic to filter through the school list
   const filteredSchools = schoolData.filter((school) => {
-    return school.name.includes(searchTerm);
+    return school.name.toLowerCase().includes(searchTerm);
   })
 
 
-    const mainStyle = {
-      background: '#f2f2f2',
-      marginTop: '30px',
-      borderTop: '1px solid #d7d6d6'
-    }
+  const mainStyle = {
+    background: '#f2f2f2',
+    marginTop: '30px',
+    borderTop: '1px solid #d7d6d6'
+  }
 
     return (
       <div className="App">

@@ -16,7 +16,7 @@ const Image = () => {
   }
     return(
     <Segment.Group id="map">
-      <Segment>
+      <Segment className="container">
         <img style={image} src={classImg} alt="class" loading="eager" height="475" width="223" />
       </Segment>
     </Segment.Group>
